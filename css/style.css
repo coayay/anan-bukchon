@@ -761,23 +761,53 @@ em {
     text-align: right;
 }
 
-/* Scene 03 — dark overlay variant */
-.scene-spread-03 .scene-fullimage { aspect-ratio: 16/9; }
-.scene-dark-overlay {
+/* Scene 03 — 차와 정적 editorial split (text 40% / image 60%) */
+.scene-tea {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    align-items: stretch;
+    gap: 0;
+    margin-bottom: 180px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    background: var(--bg);
+}
+.scene-tea-text {
+    padding: 100px 80px 100px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.scene-tea-image {
+    position: relative;
+    min-height: 720px;
+    overflow: hidden;
+    background: var(--bg-deep);
+}
+.scene-tea-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 1.6s var(--ease);
+}
+.scene-tea:hover .scene-tea-image img { transform: scale(1.03); }
+.scene-tea-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(135deg, rgba(20,16,13,0.65), rgba(20,16,13,0.35));
+    background: rgba(20, 16, 13, 0.15);
     pointer-events: none;
+    z-index: 1;
 }
-.scene-caption-03 {
+.scene-tea-image::before {
+    content: '';
     position: absolute;
-    bottom: 60px;
-    left: 40px;
-    margin: 0;
-    max-width: 580px;
-    background: transparent;
-    padding: 0;
-    width: auto;
+    top: 0; left: 0; bottom: 0;
+    width: 160px;
+    background: linear-gradient(to right, var(--bg) 0%, transparent 100%);
+    z-index: 2;
+    pointer-events: none;
 }
 
 .scene-num {
@@ -1734,6 +1764,10 @@ em {
     .scene-split-left .scene-split-image { order: 1; }
     .scene-split-right .scene-split-text,
     .scene-split-left .scene-split-text { order: 2; padding: 48px 24px; }
+    .scene-tea { grid-template-columns: 1fr; margin-bottom: 100px; }
+    .scene-tea-image { min-height: 360px; order: 1; }
+    .scene-tea-image::before { display: none; }
+    .scene-tea-text { order: 2; padding: 48px 24px; justify-content: flex-start; }
     .scenes-intro { margin-bottom: 72px; }
 
     /* A Day */
