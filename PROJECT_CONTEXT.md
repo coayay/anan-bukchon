@@ -59,9 +59,14 @@
 ├── css/style.css       # 전체 스타일 (v2 에디토리얼)
 ├── js/main.js          # 인터랙션 + Airbnb URL 변수
 ├── images/
-│   ├── hero-courtyard.jpg   # Hero + Reserve + Scene 01 배경
-│   ├── garden-view.jpg      # Gallery 02
-│   └── scene-bath.png       # 자쿠지 (Scene 02 + Gallery 03)
+│   ├── hero-courtyard.jpg    # Hero + Reserve + Scene 01 + Gallery 01 배경
+│   ├── garden-view.jpg       # Gallery 02
+│   ├── scene-bath.png        # 자쿠지 (Scene 02 + Gallery 03)
+│   ├── scene-tea.png         # 다실 (Scene 03)
+│   ├── gallery-tearoom.png   # Gallery 04 — 티룸
+│   ├── gallery-bedroom.png   # Gallery 05 — 침실
+│   ├── gallery-loft.png      # Gallery 06 + Scene 04 — 다락
+│   └── gallery-detail.png    # Gallery 07 — 건축 디테일
 └── PROJECT_CONTEXT.md  # 이 파일
 ```
 
@@ -87,20 +92,23 @@ git push
 ## 완료된 작업
 
 - [x] 젠스파크 v2 디자인 인수 및 분석
-- [x] 자쿠지 이미지(scene-bath.png) 적용 — Scene 02 + Gallery 03
 - [x] 전체 카피 리라이팅 (브랜드 디렉터 + 카피라이터 관점)
 - [x] 타이포 위계 개선 (Hero weight·자간·gradient 조정)
 - [x] Hero eyebrow 스타일 변경 (이탤릭 골드 → 산세리프 트래킹 레이블)
 - [x] GitHub Pages 배포 완료
+- [x] Scene 02 자쿠지 이미지(scene-bath.png) 적용
+- [x] Gallery 04~07 실제 이미지 교체 (티룸·침실·다락·건축 디테일)
+- [x] Scene 04 다락 — gallery-loft.png 이미지 적용
+- [x] Scene 02 캡션 max-width 수정 (처마 아래 줄바꿈 버그 수정)
+- [x] Scene 03 — 에디토리얼 스플릿 레이아웃으로 전면 개편
+  - 구조: 텍스트 40% / 다실 이미지(scene-tea.png) 60%
+  - 이미지 좌측 엣지 gradient fade 적용
+  - dark brown overlay 15%
+  - 모바일: 이미지 상단 / 텍스트 하단
 
 ---
 
-## 남은 작업 (교체 대기)
-
-### 이미지
-- [ ] Scene 03 — 차와 정적 (대청 / 촬영 예정)
-- [ ] Scene 04 — 다락 (촬영 예정)
-- [ ] Gallery 04~07 — 티룸·침실·다락·건축 디테일
+## 남은 작업
 
 ### 링크·연락처
 - [ ] 에어비앤비 URL — `js/main.js` 상단 `AIRBNB_URL` 변수에 입력
