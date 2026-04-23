@@ -1758,6 +1758,7 @@ em {
         margin-left: 24px;
     }
     .scene-caption-01 { margin-left: 24px; }
+    .scene-caption-bath { margin-top: 0; }
     .scene-split { grid-template-columns: 1fr; margin-bottom: 100px; }
     .scene-split-image { height: 380px; }
     .scene-split-right .scene-split-image,
