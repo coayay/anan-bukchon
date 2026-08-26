@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" role="img" aria-label="냉난방 일러스트">
+  <defs>
+    <linearGradient id="bgc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#faf6ee"/>
+      <stop offset="1" stop-color="#f0e9db"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="560" fill="url(#bgc)"/>
+
+  <!-- 벽걸이 에어컨 -->
+  <g stroke="#6b5236" stroke-width="2.5" fill="none" stroke-linecap="round">
+    <rect x="300" y="90" width="300" height="86" rx="18" fill="#ffffff" fill-opacity="0.55"/>
+    <line x1="322" y1="152" x2="578" y2="152"/>
+    <circle cx="560" cy="118" r="5" fill="#c8a878" stroke="none"/>
+  </g>
+  <!-- 바람 결 (골드) -->
+  <g stroke="#c8a878" stroke-width="2.2" fill="none" stroke-linecap="round" opacity="0.85">
+    <path d="M 350 205 q 18 14 0 30 q -16 14 2 28"/>
+    <path d="M 450 205 q 18 14 0 30 q -16 14 2 28"/>
+    <path d="M 550 205 q 18 14 0 30 q -16 14 2 28"/>
+  </g>
+
+  <!-- 리모컨 -->
+  <g stroke="#6b5236" stroke-width="2.5" fill="none" stroke-linecap="round">
+    <rect x="395" y="300" width="110" height="180" rx="16" fill="#ffffff" fill-opacity="0.7"/>
+    <rect x="413" y="320" width="74" height="38" rx="6"/>
+    <text x="450" y="346" font-family="Georgia, serif" font-size="20" fill="#6b5236" stroke="none" text-anchor="middle">24°</text>
+    <circle cx="430" cy="392" r="10"/>
+    <circle cx="470" cy="392" r="10"/>
+    <circle cx="430" cy="428" r="10"/>
+    <circle cx="470" cy="428" r="10"/>
+    <line x1="424" y1="456" x2="476" y2="456"/>
+  </g>
+
+  <!-- 좌: 눈꽃 / 우: 온돌 열결 -->
+  <g stroke="#8a6a47" stroke-width="2.2" fill="none" stroke-linecap="round" opacity="0.8">
+    <g transform="translate(180,390)">
+      <line x1="0" y1="-34" x2="0" y2="34"/>
+      <line x1="-30" y1="-17" x2="30" y2="17"/>
+      <line x1="-30" y1="17" x2="30" y2="-17"/>
+      <line x1="-8" y1="-26" x2="0" y2="-18"/><line x1="8" y1="-26" x2="0" y2="-18"/>
+      <line x1="-8" y1="26" x2="0" y2="18"/><line x1="8" y1="26" x2="0" y2="18"/>
+    </g>
+    <g transform="translate(720,390)">
+      <path d="M -36 20 q 10 -16 0 -32 q -8 -14 2 -28" />
+      <path d="M 0 20 q 10 -16 0 -32 q -8 -14 2 -28" />
+      <path d="M 36 20 q 10 -16 0 -32 q -8 -14 2 -28" />
+    </g>
+  </g>
+
+  <!-- 바닥 선 -->
+  <line x1="120" y1="500" x2="780" y2="500" stroke="#d8cdba" stroke-width="2"/>
+  <text x="450" y="536" font-family="Georgia, serif" font-style="italic" font-size="17" fill="#b49472" text-anchor="middle">Heating &amp; Cooling</text>
+</svg>
