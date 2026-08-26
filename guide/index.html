@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="ko" data-lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,13 +17,22 @@
 </head>
 <body>
 
+<!-- ============ LANGUAGE SWITCH ============ -->
+<div class="lang-switch" role="group" aria-label="언어 선택 / Language">
+    <button class="lang-btn is-active" data-lang="ko" type="button">한국어</button>
+    <button class="lang-btn" data-lang="en" type="button">EN</button>
+</div>
+
 <!-- ============ COVER ============ -->
 <header class="cover">
     <div class="cover-bg" role="img" aria-label="안안 마당 전경"></div>
     <div class="cover-inner">
         <p class="cover-eyebrow">Bukchon Byeolseo ANAN</p>
         <h1 class="cover-title">안안 <em>Guide Book</em></h1>
-        <p class="cover-sub">머무는 동안 필요한 모든 것을 이 한 페이지에 담았습니다.<br>Everything you need for your stay, in one page.</p>
+        <p class="cover-sub">
+            <span class="ko">머무는 동안 필요한 모든 것을 이 한 페이지에 담았습니다.</span>
+            <span class="en">Everything you need for your stay, in one page.</span>
+        </p>
         <div class="cover-meta">
             <span>Gahoe-dong 33-20</span>
             <span>Since 1920s</span>
@@ -35,14 +44,14 @@
 <!-- ============ QUICK GRID ============ -->
 <section class="quick" aria-label="빠른 찾기">
     <div class="container">
-        <p class="quick-label">Quick Find · 빠른 찾기</p>
+        <p class="quick-label"><span class="ko">Quick Find · 빠른 찾기</span><span class="en">Quick Find</span></p>
         <div class="quick-grid">
-            <a class="quick-card" href="#essentials"><i class="fa-solid fa-wifi"></i><span>Wi-Fi·출입</span></a>
-            <a class="quick-card" href="#bath"><i class="fa-solid fa-bath"></i><span>자쿠지</span></a>
-            <a class="quick-card" href="#climate"><i class="fa-solid fa-temperature-half"></i><span>냉난방</span></a>
-            <a class="quick-card" href="#waste"><i class="fa-solid fa-recycle"></i><span>쓰레기</span></a>
-            <a class="quick-card" href="#bukchon"><i class="fa-solid fa-mountain-sun"></i><span>북촌 산책</span></a>
-            <a class="quick-card" href="#emergency"><i class="fa-solid fa-kit-medical"></i><span>비상시</span></a>
+            <a class="quick-card" href="#essentials"><i class="fa-solid fa-wifi"></i><span><span class="ko">Wi-Fi·출입</span><span class="en">Wi-Fi &amp; Entry</span></span></a>
+            <a class="quick-card" href="#bath"><i class="fa-solid fa-bath"></i><span><span class="ko">자쿠지</span><span class="en">The Bath</span></span></a>
+            <a class="quick-card" href="#climate"><i class="fa-solid fa-temperature-half"></i><span><span class="ko">냉난방</span><span class="en">Heating &amp; AC</span></span></a>
+            <a class="quick-card" href="#waste"><i class="fa-solid fa-recycle"></i><span><span class="ko">쓰레기</span><span class="en">Waste</span></span></a>
+            <a class="quick-card" href="#bukchon"><i class="fa-solid fa-mountain-sun"></i><span><span class="ko">북촌 산책</span><span class="en">Bukchon</span></span></a>
+            <a class="quick-card" href="#emergency"><i class="fa-solid fa-kit-medical"></i><span><span class="ko">비상시</span><span class="en">Emergency</span></span></a>
         </div>
     </div>
 </section>
@@ -51,15 +60,15 @@
 <nav class="chip-nav" aria-label="가이드북 목차">
     <div class="chip-track" id="chipTrack">
         <a class="chip" href="#welcome">Welcome</a>
-        <a class="chip" href="#essentials">필수 정보</a>
-        <a class="chip" href="#bath">자쿠지</a>
-        <a class="chip" href="#climate">냉난방</a>
-        <a class="chip" href="#appliances">가전·비품</a>
-        <a class="chip" href="#waste">쓰레기</a>
-        <a class="chip" href="#rules">하우스룰</a>
-        <a class="chip" href="#bukchon">북촌</a>
-        <a class="chip" href="#emergency">비상시</a>
-        <a class="chip" href="#checkout">체크아웃</a>
+        <a class="chip" href="#essentials"><span class="ko">필수 정보</span><span class="en">Essentials</span></a>
+        <a class="chip" href="#bath"><span class="ko">자쿠지</span><span class="en">The Bath</span></a>
+        <a class="chip" href="#climate"><span class="ko">냉난방</span><span class="en">Climate</span></a>
+        <a class="chip" href="#appliances"><span class="ko">가전·비품</span><span class="en">Amenities</span></a>
+        <a class="chip" href="#waste"><span class="ko">쓰레기</span><span class="en">Waste</span></a>
+        <a class="chip" href="#rules"><span class="ko">하우스룰</span><span class="en">House Rules</span></a>
+        <a class="chip" href="#bukchon"><span class="ko">북촌</span><span class="en">Bukchon</span></a>
+        <a class="chip" href="#emergency"><span class="ko">비상시</span><span class="en">Emergency</span></a>
+        <a class="chip" href="#checkout"><span class="ko">체크아웃</span><span class="en">Check-out</span></a>
     </div>
 </nav>
 
@@ -73,25 +82,30 @@
             <span class="gb-chapter-line"></span>
             <span class="gb-chapter-label">Welcome</span>
         </div>
-        <h2 class="gb-title">안안에 오신 것을 환영합니다</h2>
-        <p class="gb-title-en">Welcome to ANAN</p>
+        <h2 class="gb-title"><span class="ko">안안에 오신 것을 환영합니다</span><span class="en">Welcome to ANAN</span></h2>
+        <p class="gb-title-en"><span class="ko">Welcome to ANAN</span><span class="en">안안 · A house of quiet peace</span></p>
         <p class="gb-lead">
-            100년의 시간이 머무는 이 집에서, 오늘 하루는 온전히 당신의 것입니다.
+            <span class="ko">100년의 시간이 머무는 이 집에서, 오늘 하루는 온전히 당신의 것입니다.
             머무는 동안 궁금한 것이 생기면 이 가이드북을 먼저 열어보세요.
-            그래도 해결되지 않으면 언제든 저희를 불러주세요.
+            그래도 해결되지 않으면 언제든 저희를 불러주세요.</span>
+            <span class="en">A hundred years live in this house — and tonight, it is entirely yours.
+            If a question comes up during your stay, open this guide first.
+            If it doesn't have the answer, we are always one message away.</span>
         </p>
         <div class="contact-row">
             <a class="contact-btn" href="tel:+821000000000">
-                <i class="fa-solid fa-phone"></i>전화
+                <i class="fa-solid fa-phone"></i><span class="ko">전화</span><span class="en">Call</span>
             </a>
             <a class="contact-btn" href="#" target="_blank" rel="noopener">
-                <i class="fa-solid fa-comment"></i>카카오톡
+                <i class="fa-solid fa-comment"></i><span class="ko">카카오톡</span><span class="en">KakaoTalk</span>
             </a>
             <a class="contact-btn" href="#" target="_blank" rel="noopener">
                 <i class="fa-brands fa-whatsapp"></i>WhatsApp
             </a>
         </div>
-        <p class="info-note"><span class="tbd">확인 필요</span> 전화번호·카카오톡 채널·WhatsApp 링크는 오픈 시 확정 후 연결됩니다.</p>
+        <p class="info-note"><span class="tbd"><span class="ko">확인 필요</span><span class="en">TBC</span></span>
+            <span class="ko">전화번호·카카오톡 채널·WhatsApp 링크는 오픈 시 확정 후 연결됩니다.</span>
+            <span class="en">Phone, KakaoTalk and WhatsApp links will be connected at opening.</span></p>
     </div>
 </section>
 
@@ -103,7 +117,7 @@
             <span class="gb-chapter-line"></span>
             <span class="gb-chapter-label">Essentials</span>
         </div>
-        <h2 class="gb-title">필수 정보</h2>
+        <h2 class="gb-title"><span class="ko">필수 정보</span><span class="en">Essentials</span></h2>
         <p class="gb-title-en">Wi-Fi · Access · Check-in</p>
 
         <div class="info-card">
@@ -111,44 +125,52 @@
             <div class="copy-row">
                 <div>
                     <p class="copy-row-label">Network</p>
-                    <p class="info-value" id="wifiSsid">ANAN_5G <span class="tbd">확인 필요</span></p>
+                    <p class="info-value">ANAN_5G <span class="tbd"><span class="ko">확인 필요</span><span class="en">TBC</span></span></p>
                 </div>
-                <button class="copy-btn" data-copy="ANAN_5G">복사</button>
+                <button class="copy-btn" data-copy="ANAN_5G"><span class="ko">복사</span><span class="en">Copy</span></button>
             </div>
             <div class="copy-row">
                 <div>
                     <p class="copy-row-label">Password</p>
-                    <p class="info-value" id="wifiPw">anan1920! <span class="tbd">확인 필요</span></p>
+                    <p class="info-value">anan1920! <span class="tbd"><span class="ko">확인 필요</span><span class="en">TBC</span></span></p>
                 </div>
-                <button class="copy-btn" data-copy="anan1920!">복사</button>
+                <button class="copy-btn" data-copy="anan1920!"><span class="ko">복사</span><span class="en">Copy</span></button>
             </div>
         </div>
 
         <div class="info-card">
-            <div class="info-card-head"><i class="fa-solid fa-lock"></i><h3>출입 · Door Lock</h3></div>
-            <p>대문 도어락에 비밀번호를 입력한 뒤 <strong>#</strong> 버튼을 눌러주세요.
-            비밀번호는 체크인 당일 문자로 안내드립니다.</p>
-            <p class="info-note"><span class="tbd">확인 필요</span> 도어락 방식(비밀번호/카드)과 전달 방식 확정 필요</p>
+            <div class="info-card-head"><i class="fa-solid fa-lock"></i><h3><span class="ko">출입 · Door Lock</span><span class="en">Entry · Door Lock</span></h3></div>
+            <p><span class="ko">대문 도어락에 비밀번호를 입력한 뒤 <strong>#</strong> 버튼을 눌러주세요.
+            비밀번호는 체크인 당일 문자로 안내드립니다.</span>
+            <span class="en">Enter the passcode on the front-gate door lock, then press <strong>#</strong>.
+            The passcode is sent to you by message on the day of check-in.</span></p>
+            <p class="info-note"><span class="tbd"><span class="ko">확인 필요</span><span class="en">TBC</span></span>
+                <span class="ko">도어락 방식(비밀번호/카드)과 전달 방식 확정 필요</span>
+                <span class="en">Lock type and delivery method to be finalized</span></p>
         </div>
 
         <div class="time-grid">
             <div class="info-card">
-                <div class="info-card-head"><i class="fa-solid fa-door-open"></i><h3>체크인</h3></div>
-                <p class="info-value">15:00 <span class="tbd">확인 필요</span></p>
-                <p class="info-note">Check-in from 3 PM</p>
+                <div class="info-card-head"><i class="fa-solid fa-door-open"></i><h3><span class="ko">체크인</span><span class="en">Check-in</span></h3></div>
+                <p class="info-value">15:00 <span class="tbd"><span class="ko">확인 필요</span><span class="en">TBC</span></span></p>
+                <p class="info-note"><span class="ko">Check-in from 3 PM</span><span class="en">From 3 PM</span></p>
             </div>
             <div class="info-card">
-                <div class="info-card-head"><i class="fa-solid fa-door-closed"></i><h3>체크아웃</h3></div>
-                <p class="info-value">11:00 <span class="tbd">확인 필요</span></p>
-                <p class="info-note">Check-out by 11 AM</p>
+                <div class="info-card-head"><i class="fa-solid fa-door-closed"></i><h3><span class="ko">체크아웃</span><span class="en">Check-out</span></h3></div>
+                <p class="info-value">11:00 <span class="tbd"><span class="ko">확인 필요</span><span class="en">TBC</span></span></p>
+                <p class="info-note"><span class="ko">Check-out by 11 AM</span><span class="en">By 11 AM</span></p>
             </div>
         </div>
 
         <div class="info-card">
-            <div class="info-card-head"><i class="fa-solid fa-car"></i><h3>주차 · Parking</h3></div>
-            <p>북촌 한옥마을 특성상 숙소 앞 주차는 어렵습니다.
-            인근 공영주차장 이용을 권해드립니다.</p>
-            <p class="info-note"><span class="tbd">확인 필요</span> 제휴·추천 주차장 위치와 요금 확정 필요</p>
+            <div class="info-card-head"><i class="fa-solid fa-car"></i><h3><span class="ko">주차 · Parking</span><span class="en">Parking</span></h3></div>
+            <p><span class="ko">북촌 한옥마을 특성상 숙소 앞 주차는 어렵습니다.
+            인근 공영주차장 이용을 권해드립니다.</span>
+            <span class="en">Street parking is not available in the Bukchon Hanok Village.
+            We recommend using a nearby public parking lot.</span></p>
+            <p class="info-note"><span class="tbd"><span class="ko">확인 필요</span><span class="en">TBC</span></span>
+                <span class="ko">제휴·추천 주차장 위치와 요금 확정 필요</span>
+                <span class="en">Recommended parking location and rates to be finalized</span></p>
         </div>
     </div>
 </section>
@@ -161,11 +183,13 @@
             <span class="gb-chapter-line"></span>
             <span class="gb-chapter-label">The Bath</span>
         </div>
-        <h2 class="gb-title">자쿠지 사용법</h2>
-        <p class="gb-title-en">100년의 처마 아래, 오늘의 온도</p>
+        <h2 class="gb-title"><span class="ko">자쿠지 사용법</span><span class="en">The View Bath</span></h2>
+        <p class="gb-title-en"><span class="ko">100년의 처마 아래, 오늘의 온도</span><span class="en">Under the hundred-year eaves, today's temperature</span></p>
         <p class="gb-lead">
-            안안의 시그니처, 처마 아래 전망 자쿠지입니다.
-            아래 순서대로 준비하시면 가장 좋은 온도의 시간을 만날 수 있습니다.
+            <span class="ko">안안의 시그니처, 처마 아래 전망 자쿠지입니다.
+            아래 순서대로 준비하시면 가장 좋은 온도의 시간을 만날 수 있습니다.</span>
+            <span class="en">ANAN's signature — an open-air view bath beneath the eaves.
+            Follow the steps below for the perfect soak.</span>
         </p>
 
         <figure class="gb-figure">
@@ -177,29 +201,35 @@
             <div class="step">
                 <span class="step-num">01</span>
                 <div class="step-body">
-                    <h4>배수 마개 잠그기</h4>
-                    <p>욕조 바닥의 마개가 완전히 닫혔는지 먼저 확인해주세요. <span class="tbd">확인 필요</span></p>
+                    <h4><span class="ko">배수 마개 잠그기</span><span class="en">Close the drain plug</span></h4>
+                    <p><span class="ko">욕조 바닥의 마개가 완전히 닫혔는지 먼저 확인해주세요.</span>
+                    <span class="en">Make sure the plug at the bottom of the tub is fully closed.</span>
+                    <span class="tbd"><span class="ko">확인 필요</span><span class="en">TBC</span></span></p>
                 </div>
             </div>
             <div class="step">
                 <span class="step-num">02</span>
                 <div class="step-body">
-                    <h4>온수 받기</h4>
-                    <p>온수 수전을 열어 물을 받습니다. 적정 수위까지 약 20~30분이 걸립니다. <span class="tbd">확인 필요</span></p>
+                    <h4><span class="ko">온수 받기</span><span class="en">Fill with hot water</span></h4>
+                    <p><span class="ko">온수 수전을 열어 물을 받습니다. 적정 수위까지 약 20~30분이 걸립니다.</span>
+                    <span class="en">Open the hot-water tap. Filling to the right level takes about 20–30 minutes.</span>
+                    <span class="tbd"><span class="ko">확인 필요</span><span class="en">TBC</span></span></p>
                 </div>
             </div>
             <div class="step">
                 <span class="step-num">03</span>
                 <div class="step-body">
-                    <h4>온도 확인</h4>
-                    <p>권장 온도는 38~40℃입니다. 들어가기 전 손으로 온도를 확인해주세요.</p>
+                    <h4><span class="ko">온도 확인</span><span class="en">Check the temperature</span></h4>
+                    <p><span class="ko">권장 온도는 38~40℃입니다. 들어가기 전 손으로 온도를 확인해주세요.</span>
+                    <span class="en">We recommend 38–40℃. Test the water with your hand before stepping in.</span></p>
                 </div>
             </div>
             <div class="step">
                 <span class="step-num">04</span>
                 <div class="step-body">
-                    <h4>사용 후 배수</h4>
-                    <p>사용을 마치면 마개를 열어 물을 완전히 비워주세요. 다음 사용을 위한 배려입니다.</p>
+                    <h4><span class="ko">사용 후 배수</span><span class="en">Drain after use</span></h4>
+                    <p><span class="ko">사용을 마치면 마개를 열어 물을 완전히 비워주세요. 다음 사용을 위한 배려입니다.</span>
+                    <span class="en">When you finish, open the plug and empty the tub completely — a courtesy for the next soak.</span></p>
                 </div>
             </div>
         </div>
@@ -207,19 +237,25 @@
         <div class="notice">
             <i class="fa-solid fa-triangle-exclamation"></i>
             <div>
-                <strong>안전을 위해 지켜주세요.</strong><br>
+                <span class="ko"><strong>안전을 위해 지켜주세요.</strong><br>
                 음주 후 이용은 삼가주시고, 15분 이상 연속 입욕 시 잠시 쉬어가세요.
-                겨울철에는 욕조 주변 바닥이 미끄러울 수 있습니다.
+                겨울철에는 욕조 주변 바닥이 미끄러울 수 있습니다.</span>
+                <span class="en"><strong>For your safety.</strong><br>
+                Please avoid bathing after drinking, and take a break after 15 minutes of soaking.
+                In winter, the floor around the tub can be slippery.</span>
             </div>
         </div>
 
         <details class="acc">
-            <summary><i class="fa-solid fa-circle-question acc-icon"></i>자주 묻는 질문</summary>
+            <summary><i class="fa-solid fa-circle-question acc-icon"></i><span class="ko">자주 묻는 질문</span><span class="en">Frequently asked</span></summary>
             <div class="acc-body">
                 <ul>
-                    <li><strong>물이 미지근해요</strong> — 보일러 온수 온도를 확인해주세요. (Chapter IV 참고)</li>
-                    <li><strong>야간에도 이용 가능한가요?</strong> — 가능합니다. 다만 22시 이후에는 이웃을 위해 조용히 이용해주세요.</li>
-                    <li><strong>입욕제를 써도 되나요?</strong> — 준비된 입욕제만 사용해주세요. <span class="tbd">확인 필요</span></li>
+                    <li class="ko"><strong>물이 미지근해요</strong> — 보일러 온수 온도를 확인해주세요. (Chapter IV 참고)</li>
+                    <li class="ko"><strong>야간에도 이용 가능한가요?</strong> — 가능합니다. 다만 22시 이후에는 이웃을 위해 조용히 이용해주세요.</li>
+                    <li class="ko"><strong>입욕제를 써도 되나요?</strong> — 준비된 입욕제만 사용해주세요. <span class="tbd">확인 필요</span></li>
+                    <li class="en"><strong>The water is lukewarm</strong> — check the boiler's hot-water setting. (See Chapter IV)</li>
+                    <li class="en"><strong>Can I use it at night?</strong> — Yes. After 10 PM, please keep it quiet for the neighbors.</li>
+                    <li class="en"><strong>Can I use bath salts?</strong> — Only the ones we provide, please. <span class="tbd">TBC</span></li>
                 </ul>
             </div>
         </details>
@@ -234,32 +270,40 @@
             <span class="gb-chapter-line"></span>
             <span class="gb-chapter-label">Heating &amp; Cooling</span>
         </div>
-        <h2 class="gb-title">냉난방</h2>
-        <p class="gb-title-en">Air Conditioning · Ondol</p>
+        <h2 class="gb-title"><span class="ko">냉난방</span><span class="en">Heating &amp; Cooling</span></h2>
+        <p class="gb-title-en"><span class="ko">Air Conditioning · Ondol</span><span class="en">Air conditioning · Ondol floor heating</span></p>
 
         <figure class="gb-figure">
             <img src="images/gallery-bedroom.png" alt="안안 침실" loading="lazy">
         </figure>
 
         <details class="acc" open>
-            <summary><i class="fa-solid fa-snowflake acc-icon"></i>에어컨 · Air Conditioner</summary>
+            <summary><i class="fa-solid fa-snowflake acc-icon"></i><span class="ko">에어컨 · Air Conditioner</span><span class="en">Air Conditioner</span></summary>
             <div class="acc-body">
                 <ul>
-                    <li>리모컨은 침실 협탁 위에 있습니다. <span class="tbd">확인 필요</span></li>
-                    <li>전원 버튼을 누른 뒤, 희망 온도는 24~26℃를 권장합니다.</li>
-                    <li>외출 시에는 전원을 꺼주세요.</li>
+                    <li class="ko">리모컨은 침실 협탁 위에 있습니다. <span class="tbd">확인 필요</span></li>
+                    <li class="ko">전원 버튼을 누른 뒤, 희망 온도는 24~26℃를 권장합니다.</li>
+                    <li class="ko">외출 시에는 전원을 꺼주세요.</li>
+                    <li class="en">The remote is on the bedside table. <span class="tbd">TBC</span></li>
+                    <li class="en">Press power, then set 24–26℃ for comfort.</li>
+                    <li class="en">Please turn it off when you go out.</li>
                 </ul>
-                <p><span class="tbd">확인 필요</span> 에어컨 모델 확정 후 리모컨 사진과 버튼별 안내로 교체 예정</p>
+                <p><span class="tbd"><span class="ko">확인 필요</span><span class="en">TBC</span></span>
+                    <span class="ko">에어컨 모델 확정 후 리모컨 사진과 버튼별 안내로 교체 예정</span>
+                    <span class="en">Remote photos and button guide will follow once the model is confirmed</span></p>
             </div>
         </details>
 
         <details class="acc">
-            <summary><i class="fa-solid fa-fire acc-icon"></i>온돌 · 보일러 (겨울)</summary>
+            <summary><i class="fa-solid fa-fire acc-icon"></i><span class="ko">온돌 · 보일러 (겨울)</span><span class="en">Ondol · Boiler (winter)</span></summary>
             <div class="acc-body">
                 <ul>
-                    <li>보일러 조절기는 주방 벽면에 있습니다. <span class="tbd">확인 필요</span></li>
-                    <li>실내 난방은 '실온' 모드에서 22~24℃를 권장합니다.</li>
-                    <li>온수가 미지근할 때는 '온수' 온도를 한 단계 올려주세요.</li>
+                    <li class="ko">보일러 조절기는 주방 벽면에 있습니다. <span class="tbd">확인 필요</span></li>
+                    <li class="ko">실내 난방은 '실온' 모드에서 22~24℃를 권장합니다.</li>
+                    <li class="ko">온수가 미지근할 때는 '온수' 온도를 한 단계 올려주세요.</li>
+                    <li class="en">The boiler panel is on the kitchen wall. <span class="tbd">TBC</span></li>
+                    <li class="en">For the heated ondol floor, set room mode to 22–24℃.</li>
+                    <li class="en">If the hot water runs lukewarm, raise the water temperature one step.</li>
                 </ul>
             </div>
         </details>
@@ -267,9 +311,12 @@
         <div class="tip">
             <i class="fa-solid fa-leaf"></i>
             <div>
-                <strong>한옥의 환기</strong> —
+                <span class="ko"><strong>한옥의 환기</strong> —
                 한옥은 숨 쉬는 집입니다. 아침에 창호를 10분만 열어두면
-                마당의 공기가 집 안을 한 바퀴 돌아 나갑니다.
+                마당의 공기가 집 안을 한 바퀴 돌아 나갑니다.</span>
+                <span class="en"><strong>A hanok breathes</strong> —
+                open the windows for ten minutes in the morning,
+                and the courtyard air will make its way through the whole house.</span>
             </div>
         </div>
     </div>
@@ -283,8 +330,8 @@
             <span class="gb-chapter-line"></span>
             <span class="gb-chapter-label">Appliances &amp; Amenities</span>
         </div>
-        <h2 class="gb-title">가전 · 비품</h2>
-        <p class="gb-title-en">Kitchen · Tea · Amenities</p>
+        <h2 class="gb-title"><span class="ko">가전 · 비품</span><span class="en">Appliances &amp; Amenities</span></h2>
+        <p class="gb-title-en"><span class="ko">Kitchen · Tea · Amenities</span><span class="en">Kitchen · Tea · Everyday items</span></p>
 
         <div class="gb-figure-pair">
             <figure><img src="images/scene-tea.png" alt="다실" loading="lazy"></figure>
@@ -292,43 +339,52 @@
         </div>
 
         <details class="acc">
-            <summary><i class="fa-solid fa-kitchen-set acc-icon"></i>주방 가전</summary>
+            <summary><i class="fa-solid fa-kitchen-set acc-icon"></i><span class="ko">주방 가전</span><span class="en">Kitchen appliances</span></summary>
             <div class="acc-body">
                 <ul>
-                    <li><strong>인덕션</strong> — 전원 터치 후 화력(1~9)을 선택하세요. 냄비를 올려야 작동합니다. <span class="tbd">확인 필요</span></li>
-                    <li><strong>전자레인지</strong> — 싱크대 상부장 아래에 있습니다. <span class="tbd">확인 필요</span></li>
-                    <li><strong>냉장고</strong> — 웰컴 드링크가 준비되어 있습니다. 자유롭게 드세요.</li>
+                    <li class="ko"><strong>인덕션</strong> — 전원 터치 후 화력(1~9)을 선택하세요. 냄비를 올려야 작동합니다. <span class="tbd">확인 필요</span></li>
+                    <li class="ko"><strong>전자레인지</strong> — 싱크대 상부장 아래에 있습니다. <span class="tbd">확인 필요</span></li>
+                    <li class="ko"><strong>냉장고</strong> — 웰컴 드링크가 준비되어 있습니다. 자유롭게 드세요.</li>
+                    <li class="en"><strong>Induction cooktop</strong> — touch power, then choose heat level 1–9. It works only with a pot placed on it. <span class="tbd">TBC</span></li>
+                    <li class="en"><strong>Microwave</strong> — below the upper kitchen cabinet. <span class="tbd">TBC</span></li>
+                    <li class="en"><strong>Refrigerator</strong> — welcome drinks are inside. Help yourself.</li>
                 </ul>
             </div>
         </details>
 
         <details class="acc">
-            <summary><i class="fa-solid fa-mug-hot acc-icon"></i>커피 · 티 공간</summary>
+            <summary><i class="fa-solid fa-mug-hot acc-icon"></i><span class="ko">커피 · 티 공간</span><span class="en">Coffee &amp; tea</span></summary>
             <div class="acc-body">
                 <ul>
-                    <li>드립 커피 도구와 원두, 그리고 계절의 차가 티 공간에 준비되어 있습니다. <span class="tbd">확인 필요</span></li>
-                    <li>전기포트는 다실 선반에 있습니다.</li>
-                    <li>다구는 사용 후 가볍게 헹궈 건조대에 올려주세요.</li>
+                    <li class="ko">드립 커피 도구와 원두, 그리고 계절의 차가 티 공간에 준비되어 있습니다. <span class="tbd">확인 필요</span></li>
+                    <li class="ko">전기포트는 다실 선반에 있습니다.</li>
+                    <li class="ko">다구는 사용 후 가볍게 헹궈 건조대에 올려주세요.</li>
+                    <li class="en">Pour-over coffee tools, beans, and seasonal teas await in the tea space. <span class="tbd">TBC</span></li>
+                    <li class="en">The electric kettle is on the tea-room shelf.</li>
+                    <li class="en">After using the tea set, please rinse lightly and leave it on the drying rack.</li>
                 </ul>
             </div>
         </details>
 
         <details class="acc">
-            <summary><i class="fa-solid fa-fire-burner acc-icon"></i>코클 · 전통 화로</summary>
+            <summary><i class="fa-solid fa-fire-burner acc-icon"></i><span class="ko">코클 · 전통 화로</span><span class="en">Kokle · traditional fire pit</span></summary>
             <div class="acc-body">
-                <p>안안의 전통 화로 '코클'은 호스트의 안내에 따라 이용해주세요.
-                안전을 위해 임의 점화는 삼가주시기 바랍니다. <span class="tbd">확인 필요</span></p>
+                <p><span class="ko">안안의 전통 화로 '코클'은 호스트의 안내에 따라 이용해주세요.
+                안전을 위해 임의 점화는 삼가주시기 바랍니다.</span>
+                <span class="en">Please enjoy ANAN's traditional fire pit, the <em>kokle</em>, only with the host's guidance.
+                For safety, do not light it yourself.</span>
+                <span class="tbd"><span class="ko">확인 필요</span><span class="en">TBC</span></span></p>
             </div>
         </details>
 
-        <h3 style="font-weight:500; font-size:17px; margin-top:34px;">비품 위치 안내</h3>
+        <h3 style="font-weight:500; font-size:17px; margin-top:34px;"><span class="ko">비품 위치 안내</span><span class="en">Where to find things</span></h3>
         <dl class="loc-list">
-            <div><dt>수건 · 여분 침구</dt><dd>침실 반닫이장 <span class="tbd">확인 필요</span></dd></div>
-            <div><dt>드라이기</dt><dd>욕실 수납장</dd></div>
-            <div><dt>어메니티 (샴푸·바디워시)</dt><dd>욕실 · 자쿠지 옆</dd></div>
-            <div><dt>구급함</dt><dd>주방 서랍 <span class="tbd">확인 필요</span></dd></div>
-            <div><dt>우산</dt><dd>현관 옆</dd></div>
-            <div><dt>보드게임 · 책</dt><dd>다락</dd></div>
+            <div><dt><span class="ko">수건 · 여분 침구</span><span class="en">Towels · extra bedding</span></dt><dd><span class="ko">침실 반닫이장</span><span class="en">Bedroom chest</span> <span class="tbd"><span class="ko">확인 필요</span><span class="en">TBC</span></span></dd></div>
+            <div><dt><span class="ko">드라이기</span><span class="en">Hair dryer</span></dt><dd><span class="ko">욕실 수납장</span><span class="en">Bathroom cabinet</span></dd></div>
+            <div><dt><span class="ko">어메니티 (샴푸·바디워시)</span><span class="en">Amenities (shampoo · body wash)</span></dt><dd><span class="ko">욕실 · 자쿠지 옆</span><span class="en">Bathroom · beside the bath</span></dd></div>
+            <div><dt><span class="ko">구급함</span><span class="en">First-aid kit</span></dt><dd><span class="ko">주방 서랍</span><span class="en">Kitchen drawer</span> <span class="tbd"><span class="ko">확인 필요</span><span class="en">TBC</span></span></dd></div>
+            <div><dt><span class="ko">우산</span><span class="en">Umbrellas</span></dt><dd><span class="ko">현관 옆</span><span class="en">By the entrance</span></dd></div>
+            <div><dt><span class="ko">보드게임 · 책</span><span class="en">Board games · books</span></dt><dd><span class="ko">다락</span><span class="en">The loft</span></dd></div>
         </dl>
     </div>
 </section>
@@ -341,38 +397,43 @@
             <span class="gb-chapter-line"></span>
             <span class="gb-chapter-label">Waste</span>
         </div>
-        <h2 class="gb-title">쓰레기 처리</h2>
-        <p class="gb-title-en">Waste &amp; Recycling</p>
+        <h2 class="gb-title"><span class="ko">쓰레기 처리</span><span class="en">Waste &amp; Recycling</span></h2>
+        <p class="gb-title-en"><span class="ko">Waste &amp; Recycling</span><span class="en">Korea sorts waste in three ways</span></p>
         <p class="gb-lead">
-            서울은 쓰레기를 세 가지로 나눠 버립니다.
-            분리가 어려우면 주방에 모아두고 가셔도 괜찮습니다 — 저희가 마무리하겠습니다.
+            <span class="ko">서울은 쓰레기를 세 가지로 나눠 버립니다.
+            분리가 어려우면 주방에 모아두고 가셔도 괜찮습니다 — 저희가 마무리하겠습니다.</span>
+            <span class="en">Seoul separates waste into three categories.
+            If sorting feels complicated, simply gather everything in the kitchen — we will take care of the rest.</span>
         </p>
 
         <div class="waste-grid">
             <div class="waste-card">
                 <i class="fa-solid fa-trash"></i>
-                <h4>일반 쓰레기</h4>
-                <p>흰색 종량제 봉투<br>(주방 서랍)</p>
+                <h4><span class="ko">일반 쓰레기</span><span class="en">General</span></h4>
+                <p><span class="ko">흰색 종량제 봉투<br>(주방 서랍)</span><span class="en">White city bags<br>(kitchen drawer)</span></p>
             </div>
             <div class="waste-card">
                 <i class="fa-solid fa-apple-whole"></i>
-                <h4>음식물</h4>
-                <p>노란색 전용 봉투<br>(싱크대 아래)</p>
+                <h4><span class="ko">음식물</span><span class="en">Food waste</span></h4>
+                <p><span class="ko">노란색 전용 봉투<br>(싱크대 아래)</span><span class="en">Yellow food-waste bags<br>(under the sink)</span></p>
             </div>
             <div class="waste-card">
                 <i class="fa-solid fa-bottle-water"></i>
-                <h4>재활용</h4>
-                <p>병·캔·플라스틱·종이<br>분리 바구니</p>
+                <h4><span class="ko">재활용</span><span class="en">Recyclables</span></h4>
+                <p><span class="ko">병·캔·플라스틱·종이<br>분리 바구니</span><span class="en">Bottles · cans · plastic · paper<br>sorting basket</span></p>
             </div>
         </div>
 
         <div class="info-card">
-            <div class="info-card-head"><i class="fa-solid fa-calendar-days"></i><h3>배출 요일 · 장소</h3></div>
-            <p>배출은 지정 요일 저녁, 대문 앞 지정 위치에 해주세요.</p>
-            <p class="info-note"><span class="tbd">확인 필요</span> 가회동 배출 요일·시간·위치 실측 후 확정 (종로구 기준)</p>
+            <div class="info-card-head"><i class="fa-solid fa-calendar-days"></i><h3><span class="ko">배출 요일 · 장소</span><span class="en">Collection days &amp; spot</span></h3></div>
+            <p><span class="ko">배출은 지정 요일 저녁, 대문 앞 지정 위치에 해주세요.</span>
+            <span class="en">Waste goes out on designated evenings, at the marked spot by the front gate.</span></p>
+            <p class="info-note"><span class="tbd"><span class="ko">확인 필요</span><span class="en">TBC</span></span>
+                <span class="ko">가회동 배출 요일·시간·위치 실측 후 확정 (종로구 기준)</span>
+                <span class="en">Exact days, times and spot for Gahoe-dong to be confirmed (Jongno-gu)</span></p>
         </div>
 
-        <div class="tip">
+        <div class="tip ko">
             <i class="fa-solid fa-circle-info"></i>
             <div>
                 <strong>For international guests</strong> —
@@ -391,37 +452,45 @@
             <span class="gb-chapter-line"></span>
             <span class="gb-chapter-label">House Rules</span>
         </div>
-        <h2 class="gb-title">하우스룰</h2>
-        <p class="gb-title-en">이 집을 아끼는 방법</p>
+        <h2 class="gb-title"><span class="ko">하우스룰</span><span class="en">House Rules</span></h2>
+        <p class="gb-title-en"><span class="ko">이 집을 아끼는 방법</span><span class="en">How to care for this house</span></p>
         <p class="gb-lead">
-            100년을 견딘 집에는 그만한 이유가 있습니다.
-            몇 가지만 지켜주시면, 이 집은 다음 100년도 견딜 수 있습니다.
+            <span class="ko">100년을 견딘 집에는 그만한 이유가 있습니다.
+            몇 가지만 지켜주시면, 이 집은 다음 100년도 견딜 수 있습니다.</span>
+            <span class="en">A house does not stand for a hundred years by accident.
+            Keep a few small promises, and it will stand for a hundred more.</span>
         </p>
 
         <div class="rule-list">
             <div class="rule">
                 <i class="fa-solid fa-moon"></i>
-                <div><strong>정숙 시간 22:00 — 08:00.</strong> 한옥마을은 주민들이 실제로 살아가는 동네입니다. 밤의 고요를 함께 지켜주세요.</div>
+                <div><span class="ko"><strong>정숙 시간 22:00 — 08:00.</strong> 한옥마을은 주민들이 실제로 살아가는 동네입니다. 밤의 고요를 함께 지켜주세요.</span>
+                <span class="en"><strong>Quiet hours 10 PM — 8 AM.</strong> Bukchon is a village where people actually live. Please help us keep the night still.</span></div>
             </div>
             <div class="rule">
                 <i class="fa-solid fa-ban-smoking"></i>
-                <div><strong>전 구역 금연.</strong> 목조 건물입니다. 마당을 포함한 모든 공간에서 금연입니다.</div>
+                <div><span class="ko"><strong>전 구역 금연.</strong> 목조 건물입니다. 마당을 포함한 모든 공간에서 금연입니다.</span>
+                <span class="en"><strong>No smoking anywhere.</strong> This is a wooden house. Smoking is prohibited in all areas, including the courtyard.</span></div>
             </div>
             <div class="rule">
                 <i class="fa-solid fa-shoe-prints"></i>
-                <div><strong>실내는 맨발 또는 준비된 실내화로.</strong> 대청과 마루는 100년 된 목재입니다. 하이힐·구두는 마루에 오르기 전에 벗어주세요.</div>
+                <div><span class="ko"><strong>실내는 맨발 또는 준비된 실내화로.</strong> 대청과 마루는 100년 된 목재입니다. 하이힐·구두는 마루에 오르기 전에 벗어주세요.</span>
+                <span class="en"><strong>Bare feet or the slippers provided.</strong> The wooden floors are a hundred years old. Please remove heels and shoes before stepping onto the maru.</span></div>
             </div>
             <div class="rule">
                 <i class="fa-solid fa-hand"></i>
-                <div><strong>창호는 부드럽게.</strong> 한지 창호는 힘을 주면 찢어집니다. 여닫을 때 천천히 밀어주세요.</div>
+                <div><span class="ko"><strong>창호는 부드럽게.</strong> 한지 창호는 힘을 주면 찢어집니다. 여닫을 때 천천히 밀어주세요.</span>
+                <span class="en"><strong>Handle the paper doors gently.</strong> Hanji paper screens tear under force. Slide them slowly.</span></div>
             </div>
             <div class="rule">
                 <i class="fa-solid fa-stairs"></i>
-                <div><strong>다락 계단은 조심스럽게.</strong> 경사가 있고 천장이 낮습니다. 머리를 숙이고 오르내려주세요.</div>
+                <div><span class="ko"><strong>다락 계단은 조심스럽게.</strong> 경사가 있고 천장이 낮습니다. 머리를 숙이고 오르내려주세요.</span>
+                <span class="en"><strong>Mind the loft stairs.</strong> They are steep, and the ceiling is low. Duck your head as you climb.</span></div>
             </div>
             <div class="rule">
                 <i class="fa-solid fa-paw"></i>
-                <div><strong>반려동물 동반 불가.</strong> <span class="tbd">확인 필요</span> 정책 확정 후 문구 조정</div>
+                <div><span class="ko"><strong>반려동물 동반 불가.</strong> <span class="tbd">확인 필요</span> 정책 확정 후 문구 조정</span>
+                <span class="en"><strong>No pets.</strong> <span class="tbd">TBC</span> Wording to follow final policy</span></div>
             </div>
         </div>
 
@@ -440,49 +509,63 @@
             <span class="gb-chapter-line"></span>
             <span class="gb-chapter-label">Bukchon</span>
         </div>
-        <h2 class="gb-title">안안에서의 북촌</h2>
-        <p class="gb-title-en">Bukchon, from ANAN</p>
+        <h2 class="gb-title"><span class="ko">안안에서의 북촌</span><span class="en">Bukchon, from ANAN</span></h2>
+        <p class="gb-title-en"><span class="ko">Bukchon, from ANAN</span><span class="en">The village at your doorstep</span></p>
         <p class="gb-lead">
-            안안은 북촌에서 하늘과 가장 가까운 자리에 있습니다.
-            대문을 나서면 북촌 8경 중 가장 아름답다고 불리는 풍경이 걸어서 닿는 거리에 있습니다.
+            <span class="ko">안안은 북촌에서 하늘과 가장 가까운 자리에 있습니다.
+            대문을 나서면 북촌 8경 중 가장 아름답다고 불리는 풍경이 걸어서 닿는 거리에 있습니다.</span>
+            <span class="en">ANAN sits at the highest point of Bukchon, closest to the sky.
+            Step out the gate, and the most beautiful of Bukchon's eight scenic views is within walking distance.</span>
         </p>
 
         <figure class="gb-figure">
             <img src="images/garden-view.jpg" alt="안안에서 바라본 기와지붕 풍경" loading="lazy">
-            <figcaption>기와의 너울 — the sea of tiled roofs</figcaption>
+            <figcaption><span class="ko">기와의 너울 — the sea of tiled roofs</span><span class="en">The sea of tiled roofs</span></figcaption>
         </figure>
 
         <div class="walk-card">
-            <h4>북촌 8경 · 제4경 <span>도보 이동</span></h4>
-            <p>기와지붕의 물결을 내려다보는 북촌의 대표 조망.
+            <h4><span class="ko">북촌 8경 · 제4경</span><span class="en">Bukchon Scenic View No. 4</span> <span><span class="ko">도보 이동</span><span class="en">On foot</span></span></h4>
+            <p><span class="ko">기와지붕의 물결을 내려다보는 북촌의 대표 조망.
             눈 내린 아침이면 하얀 지붕의 너울이 발아래 펼쳐집니다.
-            이른 아침이나 해 질 무렵이 가장 아름답습니다. <span class="tbd">확인 필요: 안안 기준 도보 시간</span></p>
-            <a class="map-link" href="https://maps.google.com/?q=북촌한옥마을" target="_blank" rel="noopener">
-                <i class="fa-solid fa-map-location-dot"></i>지도에서 보기
+            이른 아침이나 해 질 무렵이 가장 아름답습니다.</span>
+            <span class="en">Bukchon's signature view — a rolling sea of tiled roofs below.
+            On a snowy morning, the white waves of rooftops spread out at your feet.
+            Most beautiful at dawn and at dusk.</span>
+            <span class="tbd"><span class="ko">확인 필요: 안안 기준 도보 시간</span><span class="en">TBC: walking time from ANAN</span></span></p>
+            <a class="map-link" href="https://maps.google.com/?q=Bukchon+Hanok+Village" target="_blank" rel="noopener">
+                <i class="fa-solid fa-map-location-dot"></i><span class="ko">지도에서 보기</span><span class="en">Open in Maps</span>
             </a>
         </div>
 
         <div class="walk-card">
-            <h4>아침 산책 코스 <span>약 40분</span></h4>
-            <p>안안 → 북촌 8경 골목 → 삼청동 돌계단길 → 카페 거리 → 안안.
-            관광객이 몰리기 전, 오전 9시 이전의 북촌은 온전히 걷는 사람의 것입니다.</p>
+            <h4><span class="ko">아침 산책 코스</span><span class="en">Morning walk</span> <span><span class="ko">약 40분</span><span class="en">About 40 min</span></span></h4>
+            <p><span class="ko">안안 → 북촌 8경 골목 → 삼청동 돌계단길 → 카페 거리 → 안안.
+            관광객이 몰리기 전, 오전 9시 이전의 북촌은 온전히 걷는 사람의 것입니다.</span>
+            <span class="en">ANAN → the scenic-view alleys → Samcheong-dong stone steps → café street → back to ANAN.
+            Before 9 AM, before the crowds arrive, Bukchon belongs entirely to those who walk it.</span></p>
         </div>
 
         <details class="acc">
-            <summary><i class="fa-solid fa-utensils acc-icon"></i>호스트 추천 — 맛집 · 카페</summary>
+            <summary><i class="fa-solid fa-utensils acc-icon"></i><span class="ko">호스트 추천 — 맛집 · 카페</span><span class="en">Host's picks — restaurants &amp; cafés</span></summary>
             <div class="acc-body">
-                <p><span class="tbd">확인 필요</span> 오픈 전 호스트 실방문 기준으로 작성 예정.
-                상호 · 도보 시간 · 휴무일 · 한 줄 추천 이유 형식으로 5~7곳 큐레이션합니다.</p>
+                <p><span class="tbd"><span class="ko">확인 필요</span><span class="en">TBC</span></span>
+                <span class="ko">오픈 전 호스트 실방문 기준으로 작성 예정.
+                상호 · 도보 시간 · 휴무일 · 한 줄 추천 이유 형식으로 5~7곳 큐레이션합니다.</span>
+                <span class="en">To be curated before opening, from places the host has personally visited —
+                5–7 picks with name, walking time, closing days, and a one-line reason.</span></p>
             </div>
         </details>
 
         <details class="acc">
-            <summary><i class="fa-solid fa-basket-shopping acc-icon"></i>편의점 · 약국 · 생활</summary>
+            <summary><i class="fa-solid fa-basket-shopping acc-icon"></i><span class="ko">편의점 · 약국 · 생활</span><span class="en">Convenience · pharmacy · daily needs</span></summary>
             <div class="acc-body">
                 <ul>
-                    <li><strong>편의점</strong> — <span class="tbd">확인 필요: 최단거리 편의점</span></li>
-                    <li><strong>약국</strong> — <span class="tbd">확인 필요: 인근 약국 + 심야약국</span></li>
-                    <li><strong>지하철</strong> — 3호선 안국역 (마을 입구 방향)</li>
+                    <li class="ko"><strong>편의점</strong> — <span class="tbd">확인 필요: 최단거리 편의점</span></li>
+                    <li class="ko"><strong>약국</strong> — <span class="tbd">확인 필요: 인근 약국 + 심야약국</span></li>
+                    <li class="ko"><strong>지하철</strong> — 3호선 안국역 (마을 입구 방향)</li>
+                    <li class="en"><strong>Convenience store</strong> — <span class="tbd">TBC: nearest store</span></li>
+                    <li class="en"><strong>Pharmacy</strong> — <span class="tbd">TBC: nearby + late-night pharmacy</span></li>
+                    <li class="en"><strong>Subway</strong> — Anguk Station, Line 3 (toward the village entrance)</li>
                 </ul>
             </div>
         </details>
@@ -497,39 +580,42 @@
             <span class="gb-chapter-line"></span>
             <span class="gb-chapter-label">Emergency</span>
         </div>
-        <h2 class="gb-title">비상시</h2>
-        <p class="gb-lead">침착하게, 아래 번호로 바로 연결하세요. 번호를 누르면 즉시 전화가 걸립니다.</p>
+        <h2 class="gb-title"><span class="ko">비상시</span><span class="en">In an Emergency</span></h2>
+        <p class="gb-lead"><span class="ko">침착하게, 아래 번호로 바로 연결하세요. 번호를 누르면 즉시 전화가 걸립니다.</span>
+        <span class="en">Stay calm and call directly — tapping a number below places the call immediately.</span></p>
 
         <div class="emg-grid">
             <a class="emg-card" href="tel:119">
                 <i class="fa-solid fa-truck-medical"></i>
-                <h4>화재 · 구급</h4>
+                <h4><span class="ko">화재 · 구급</span><span class="en">Fire &amp; Ambulance</span></h4>
                 <p>119</p>
-                <small>Fire &amp; Ambulance</small>
+                <small><span class="ko">Fire &amp; Ambulance</span><span class="en">National emergency line</span></small>
             </a>
             <a class="emg-card" href="tel:112">
                 <i class="fa-solid fa-shield-halved"></i>
-                <h4>경찰</h4>
+                <h4><span class="ko">경찰</span><span class="en">Police</span></h4>
                 <p>112</p>
-                <small>Police</small>
+                <small><span class="ko">Police</span><span class="en">National police line</span></small>
             </a>
             <a class="emg-card" href="tel:1330">
                 <i class="fa-solid fa-globe"></i>
-                <h4>관광 통역 안내</h4>
+                <h4><span class="ko">관광 통역 안내</span><span class="en">Tourist Hotline</span></h4>
                 <p>1330</p>
-                <small>Tourist Hotline (EN/JP/CN)</small>
+                <small><span class="ko">Tourist Hotline (EN/JP/CN)</span><span class="en">24h interpretation (EN/JP/CN)</span></small>
             </a>
             <a class="emg-card" href="tel:+821000000000">
                 <i class="fa-solid fa-house"></i>
-                <h4>호스트 직통</h4>
+                <h4><span class="ko">호스트 직통</span><span class="en">Host direct</span></h4>
                 <p>010-0000-0000</p>
-                <small><span class="tbd">확인 필요</span></small>
+                <small><span class="tbd"><span class="ko">확인 필요</span><span class="en">TBC</span></span></small>
             </a>
         </div>
 
         <p style="margin-top:22px; font-size:14.5px; color:rgba(244,239,230,0.55);">
-            소화기 위치: 주방 · 현관 <span class="tbd">확인 필요</span> ·
-            인근 병원: <span class="tbd">확인 필요 (서울대병원 등 실측 후 기재)</span>
+            <span class="ko">소화기 위치: 주방 · 현관 <span class="tbd">확인 필요</span> ·
+            인근 병원: <span class="tbd">확인 필요 (서울대병원 등 실측 후 기재)</span></span>
+            <span class="en">Fire extinguishers: kitchen · entrance <span class="tbd">TBC</span> ·
+            Nearest hospital: <span class="tbd">TBC</span></span>
         </p>
     </div>
 </section>
@@ -542,22 +628,24 @@
             <span class="gb-chapter-line"></span>
             <span class="gb-chapter-label">Check-out</span>
         </div>
-        <h2 class="gb-title">떠나시기 전에</h2>
-        <p class="gb-title-en">Before you leave</p>
+        <h2 class="gb-title"><span class="ko">떠나시기 전에</span><span class="en">Before You Leave</span></h2>
+        <p class="gb-title-en"><span class="ko">Before you leave</span><span class="en">Five small things, and you're done</span></p>
         <p class="gb-lead">
-            다섯 가지만 확인해주시면 충분합니다. 설거지와 침구 정리는 하지 않으셔도 됩니다.
+            <span class="ko">다섯 가지만 확인해주시면 충분합니다. 설거지와 침구 정리는 하지 않으셔도 됩니다.</span>
+            <span class="en">Just five things — no need to do the dishes or make the bed.</span>
         </p>
 
         <div class="check-list">
-            <div class="check-item"><i class="fa-solid fa-check"></i>자쿠지 물 비우기</div>
-            <div class="check-item"><i class="fa-solid fa-check"></i>에어컨 · 보일러 끄기 (겨울철 보일러는 '외출' 모드)</div>
-            <div class="check-item"><i class="fa-solid fa-check"></i>창문 · 창호 닫기</div>
-            <div class="check-item"><i class="fa-solid fa-check"></i>쓰레기는 주방에 모아두기</div>
-            <div class="check-item"><i class="fa-solid fa-check"></i>대문 닫힘 확인 후 출발</div>
+            <div class="check-item"><i class="fa-solid fa-check"></i><span><span class="ko">자쿠지 물 비우기</span><span class="en">Drain the bath</span></span></div>
+            <div class="check-item"><i class="fa-solid fa-check"></i><span><span class="ko">에어컨 · 보일러 끄기 (겨울철 보일러는 '외출' 모드)</span><span class="en">Turn off the AC and boiler (in winter, set the boiler to 'away' mode)</span></span></div>
+            <div class="check-item"><i class="fa-solid fa-check"></i><span><span class="ko">창문 · 창호 닫기</span><span class="en">Close the windows and paper doors</span></span></div>
+            <div class="check-item"><i class="fa-solid fa-check"></i><span><span class="ko">쓰레기는 주방에 모아두기</span><span class="en">Gather your waste in the kitchen</span></span></div>
+            <div class="check-item"><i class="fa-solid fa-check"></i><span><span class="ko">대문 닫힘 확인 후 출발</span><span class="en">Make sure the front gate is closed behind you</span></span></div>
         </div>
 
         <p class="gb-lead" style="margin-top:28px;">
-            안안에서의 하루가 오래 남는 기억이 되었기를 바랍니다.<br>
+            <span class="ko">안안에서의 하루가 오래 남는 기억이 되었기를 바랍니다.<br></span>
+            <span class="en">We hope your day at ANAN stays with you for a long time.<br></span>
             <em style="font-family:var(--font-serif-en); color:var(--wood-light);">A hundred years standing. One night, yours alone.</em>
         </p>
     </div>
@@ -569,22 +657,43 @@
 <footer class="gb-footer">
     <div class="container">
         <p class="seal">安安</p>
-        <address>서울특별시 종로구 가회동 33-20 · Bukchon Byeolseo ANAN</address>
+        <address><span class="ko">서울특별시 종로구 가회동 33-20 · Bukchon Byeolseo ANAN</span><span class="en">33-20 Gahoe-dong, Jongno-gu, Seoul · Bukchon Byeolseo ANAN</span></address>
         <p class="tagline">Designed as a quiet retreat, not a hotel.</p>
-        <p class="ver">Guide Book v0.1 — Sample</p>
+        <p class="ver">Guide Book v0.2 — KO / EN</p>
     </div>
 </footer>
 
 <script>
+// ===== 언어 전환 =====
+(function () {
+    var btns = document.querySelectorAll('.lang-btn');
+    function setLang(lang) {
+        document.documentElement.setAttribute('data-lang', lang);
+        document.documentElement.setAttribute('lang', lang);
+        btns.forEach(function (b) {
+            b.classList.toggle('is-active', b.getAttribute('data-lang') === lang);
+        });
+        try { localStorage.setItem('anan-guide-lang', lang); } catch (e) {}
+    }
+    btns.forEach(function (b) {
+        b.addEventListener('click', function () { setLang(b.getAttribute('data-lang')); });
+    });
+    var saved = null;
+    try { saved = localStorage.getItem('anan-guide-lang'); } catch (e) {}
+    if (saved === 'en' || saved === 'ko') { setLang(saved); }
+})();
+
 // ===== 복사 버튼 =====
 document.querySelectorAll('.copy-btn').forEach(function (btn) {
     btn.addEventListener('click', function () {
         var text = btn.getAttribute('data-copy');
+        var isEn = document.documentElement.getAttribute('data-lang') === 'en';
         function done() {
-            btn.textContent = '복사됨 ✓';
+            var orig = btn.innerHTML;
+            btn.textContent = isEn ? 'Copied ✓' : '복사됨 ✓';
             btn.classList.add('copied');
             setTimeout(function () {
-                btn.textContent = '복사';
+                btn.innerHTML = orig;
                 btn.classList.remove('copied');
             }, 1800);
         }
